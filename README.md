@@ -1,5 +1,12 @@
 # Biblio-Space – Student Library Room Booking System
 
+#GROUP MEMBER#
+
+NUR AIMI IWANNINA BINTI MOHD HAFIZE (2026132727)
+AISYAH WARDINA BINTI RASHID (2026118983)
+NURSHAIRAH SHAZWANIE BINTI SHAHRULAZMAN (2026128945)
+AKMARUSAKINAH BINTI AZHAN (2026117845)
+
 ## Project Overview
 
 Biblio-Space is a web-based Student Library Room Booking System designed to make the process of reserving library study rooms easier and more organised.
