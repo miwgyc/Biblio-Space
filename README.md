@@ -106,7 +106,7 @@ The following demo accounts can be used to access the system.
 
 The repository includes the Entity Relationship Diagram (ERD), which illustrates the proposed database structure and relationships between the system entities.
 
-**ERD File:** `Biblio-Space-ERD.png`
+**ERD File:** `Biblio-Space-ERD.jpg`
 
 ## 9. Project Limitations
 
