@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Room | Biblio-Space</title>
+    <a href="student-dashboard.html" class="bs-back-link">
+    ← Back to Student Dashboard
+</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header inner-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">B</span>
+        <span>Biblio<span class="brand-light">-Space</span></span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="booking.html">Book a room</a>
+    </nav>
+
+    <a class="button button-small button-outline-light" href="index.html">
+        Back to home
+    </a>
+</header>
+
+<main class="booking-page">
+
+    <section class="page-heading">
+        <p class="eyebrow">MAKE YOURSELF AT HOME</p>
+        <h1>Reserve your <em>space.</em></h1>
+        <p>
+            Choose a room and a time that works for you.
+            Your next productive session is just a few steps away.
+        </p>
+    </section>
+
+    <div class="booking-columns">
+
+        <div class="booking-form-column">
+
+            <section class="form-panel">
+                <div class="form-title">
+                    <span class="step-badge">01</span>
+                    <div>
+                        <p class="eyebrow">FIRST THINGS FIRST</p>
+                        <h2>Choose your date</h2>
+                    </div>
+                </div>
+
+                <label class="field-label" for="bookingDate">
+                    Booking date
+                </label>
+
+                <input class="field-control" type="date" id="bookingDate">
+            </section>
+
+            <section class="form-panel">
+                <div class="form-title">
+                    <span class="step-badge">02</span>
+                    <div>
+                        <p class="eyebrow">FIND YOUR FIT</p>
+                        <h2>Select a room</h2>
+                    </div>
+                </div>
+
+                <div class="room-options" id="roomOptions">
+
+                    <button class="room-option selected"
+                            type="button" data-room="Room 1">
+                        <span class="room-option-top">DISCUSSION ROOM</span>
+                        <strong>Room 1</strong>
+                        <small>4 seats</small>
+                    </button>
+
+                    <button class="room-option"
+                            type="button" data-room="Room 2">
+                        <span class="room-option-top">DISCUSSION ROOM</span>
+                        <strong>Room 2</strong>
+                        <small>6 seats · Whiteboard</small>
+                    </button>
+
+                    <button class="room-option"
+                            type="button" data-room="Room 3">
+                        <span class="room-option-top">DISCUSSION ROOM</span>
+                        <strong>Room 3</strong>
+                        <small>6 seats · Whiteboard</small>
+                    </button>
+
+                    <button class="room-option"
+                            type="button" data-room="Presentation Lab A">
+                        <span class="room-option-top">PRESENTATION</span>
+                        <strong>Presentation Lab A</strong>
+                        <small>12 seats · Presentation</small>
+                    </button>
+
+                </div>
+            </section>
+
+            <section class="form-panel">
+                <div class="form-title">
+                    <span class="step-badge">03</span>
+                    <div>
+                        <p class="eyebrow">MAKE IT YOUR TIME</p>
+                        <h2>Choose a time</h2>
+                        <p class="form-hint">Each reservation is for one hour.</p>
+                    </div>
+                </div>
+
+                <div class="slot-key">
+                    <span><i class="key-dot key-open"></i> Available</span>
+                    <span><i class="key-dot key-picked"></i> Selected</span>
+                    <span><i class="key-dot key-taken"></i> Unavailable</span>
+                </div>
+
+                <div class="time-grid" id="timeSlots"></div>
+
+                <p class="form-hint slot-hint">
+                    Available booking hours: 9:00 AM – 6:00 PM.
+                </p>
+            </section>
+
+        </div>
+
+        <aside class="booking-aside">
+            <section class="summary-card">
+
+                <p class="eyebrow eyebrow-light">YOUR RESERVATION</p>
+                <h2>A moment<br>for your work.</h2>
+
+                <div class="summary-rule"></div>
+
+                <div class="summary-row">
+                    <span>Date</span>
+                    <strong id="summaryDate">Choose a date</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Room</span>
+                    <strong id="summaryRoom">Room 1</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Time</span>
+                    <strong id="summaryTime">Choose a time</strong>
+                </div>
+
+                <div class="summary-row">
+                    <span>Duration</span>
+                    <strong>1 hour</strong>
+                </div>
+
+                <div class="quota-box">
+                    <div>
+                        <span>Weekly usage</span>
+                        <strong><span id="usedHours">0</span> / 6 hours</strong>
+                    </div>
+
+                    <div class="quota-line">
+                        <span id="quotaProgress"></span>
+                    </div>
+
+                    <small id="quotaMessage">
+                        6 hours available this week.
+                    </small>
+                </div>
+
+                <button class="button button-cream button-full"
+                        id="confirmButton" type="button" disabled>
+                    Confirm booking →
+                </button>
+
+                <p class="summary-footnote">
+                    Please review your details before confirming.
+                </p>
+
+            </section>
+        </aside>
+
+    </div>
+
+    <section class="my-bookings-section">
+
+        <div class="my-bookings-heading">
+            <div>
+                <p class="eyebrow">KEEP TRACK</p>
+                <h2>Your bookings</h2>
+                <p class="form-hint">
+                    Your reservations saved on this browser.
+                </p>
+            </div>
+
+            <span class="booking-total" id="bookingCount">
+                0 bookings
+            </span>
+        </div>
+
+        <div id="myBookings" class="booking-list">
+            <div class="empty-bookings">
+                <span>✳</span>
+                <strong>No reservations just yet.</strong>
+                <p>Your confirmed bookings will appear here.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="message" class="notice" role="status" aria-live="polite"></div>
+
+</main>
+
+<footer class="site-footer">
+    <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">B</span>
+        <span>Biblio<span class="brand-light">-Space</span></span>
+    </a>
+
+    <p>A space to think. A space to create.</p>
+    <span>© 2026 Biblio-Space</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

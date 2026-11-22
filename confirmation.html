@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmed | Biblio-Space</title>
+    <a href="student-dashboard.html" class="bs-button">
+    Back to Student Dashboard </a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="site-header inner-header">
+    <a class="brand" href="index.html">
+        <span class="brand-mark">B</span>
+        <span>Biblio<span class="brand-light">-Space</span></span>
+    </a>
+
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book a room</a>
+    </nav>
+
+    <a class="button button-small button-outline-light" href="booking.html">
+        My bookings
+    </a>
+</header>
+
+<main class="confirmation-page">
+
+    <div class="confirmation-shell">
+
+        <div class="confirmation-top">
+            <div class="success-mark">✓</div>
+
+            <p class="eyebrow eyebrow-light">
+                IT'S OFFICIALLY YOURS
+            </p>
+
+            <h1>You're <em>booked.</em></h1>
+
+            <p>
+                Your study space is reserved.
+                We've put all your booking details together below.
+            </p>
+        </div>
+
+        <section class="ticket-card" id="confirmationDetails">
+
+            <div class="ticket-heading">
+                <div>
+                    <p class="eyebrow">BIBLIO-SPACE RESERVATION</p>
+                    <h2>Booking details</h2>
+                </div>
+
+                <span class="confirmed-pill">CONFIRMED</span>
+            </div>
+
+            <div class="ticket-reference">
+                <span>BOOKING REFERENCE</span>
+                <strong id="bookingReference">—</strong>
+            </div>
+
+            <div class="ticket-grid">
+
+                <div class="ticket-detail">
+                    <span>ROOM</span>
+                    <strong id="confirmedRoom">—</strong>
+                </div>
+
+                <div class="ticket-detail">
+                    <span>DATE</span>
+                    <strong id="confirmedDate">—</strong>
+                </div>
+
+                <div class="ticket-detail">
+                    <span>TIME</span>
+                    <strong id="confirmedTime">—</strong>
+                </div>
+
+                <div class="ticket-detail">
+                    <span>DURATION</span>
+                    <strong id="confirmedDuration">1 hour</strong>
+                </div>
+
+            </div>
+
+            <div class="ticket-bottom">
+                <span>Thank you for choosing Biblio-Space.</span>
+                <span>✳</span>
+            </div>
+
+        </section>
+
+        <div class="confirmation-actions">
+            <a class="button button-cream" href="booking.html">
+                View my bookings →
+            </a>
+
+            <a class="text-link text-link-light" href="index.html">
+                Return to homepage
+            </a>
+        </div>
+        
+        <h1> </h1>
+        <p class="confirmation-note" id="confirmationNote">
+            Keep this reference for your records.
+            This prototype stores bookings in your current browser.
+        </p>
+
+    </div>
+
+</main>
+
+<footer class="site-footer">
+    <a class="brand brand-footer" href="index.html">
+        <span class="brand-mark">B</span>
+        <span>Biblio<span class="brand-light">-Space</span></span>
+    </a>
+
+    <p>A space to think. A space to create.</p>
+    <span>© 2026 Biblio-Space</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

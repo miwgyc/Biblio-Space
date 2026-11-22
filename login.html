@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | Biblio-Space</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .register-prompt {
+            margin-top: 22px;
+            padding-top: 18px;
+            border-top: 1px solid #e8dcd6;
+            text-align: center;
+            font-size: 14px;
+            color: #88777a;
+        }
+
+        .register-prompt a {
+            color: #762e45;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .register-prompt a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body class="bs-page" data-page="login">
+
+    <main class="bs-login-wrapper">
+
+        <section class="bs-login-card">
+
+            <a href="index.html" class="bs-brand">
+                Biblio-Space
+            </a>
+
+            <p class="bs-eyebrow">WELCOME BACK</p>
+
+            <h1>Login to your space.</h1>
+
+            <p class="bs-muted">
+                Access your library room booking account.
+            </p>
+
+            <form id="loginForm">
+
+                <label for="role">Login as</label>
+
+                <select id="role" required>
+                    <option value="student">Student</option>
+                    <option value="librarian">Librarian</option>
+                </select>
+
+                <label for="email">Email address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <p id="loginError" class="bs-error"></p>
+
+                <button type="submit" class="bs-button bs-full">
+                    Login →
+                </button>
+
+            </form>
+
+            <!-- NEW REGISTRATION LINK -->
+            <div class="register-prompt">
+                Don't have an account?
+                <a href="register.html">Create an account</a>
+            </div>
+
+            <div class="bs-demo-info">
+
+                <strong>DEMO STUDENT ACCOUNT</strong>
+
+                <p>Email: student@bibliospace.com</p>
+                <p>Password: student123</p>
+
+                <hr>
+
+                <strong>DEMO LIBRARIAN ACCOUNT</strong>
+
+                <p>Email: librarian@bibliospace.com</p>
+                <p>Password: librarian123</p>
+
+            </div>
+
+            <a href="index.html" class="bs-back-link">
+                ← Back to homepage
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="portal.js"></script>
+
+</body>
+</html>

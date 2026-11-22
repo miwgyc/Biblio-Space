@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librarian Dashboard | Biblio-Space</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bs-page" data-page="librarian">
+
+    <header class="bs-header">
+        <a href="librarian-dashboard.html" class="bs-brand">
+            Biblio-Space
+        </a>
+
+        <nav class="bs-nav">
+            <a href="librarian-dashboard.html">Dashboard</a>
+            <a href="daily-schedule.html">Daily Schedule</a>
+            <a href="manage-rooms.html">Manage Rooms</a>
+        </nav>
+
+        <button class="bs-logout" type="button" data-logout>
+            Log Out
+        </button>
+    </header>
+
+    <main class="bs-container">
+
+        <section class="bs-welcome">
+            <p class="bs-eyebrow">LIBRARIAN PORTAL</p>
+            <h1>Welcome back, <span id="librarianName">Librarian</span>.</h1>
+            <p class="bs-muted">
+                Manage room bookings and monitor the study spaces at Biblio-Space.
+            </p>
+        </section>
+
+        <section class="bs-stats">
+
+            <article class="bs-stat-card">
+                <p class="bs-muted">Total Bookings</p>
+                <h2 id="librarianBookingCount">0</h2>
+                <p>All recorded bookings</p>
+            </article>
+
+            <article class="bs-stat-card">
+                <p class="bs-muted">Available Rooms</p>
+                <h2 id="availableRoomCount">0</h2>
+                <p>Ready for students</p>
+            </article>
+
+            <article class="bs-stat-card">
+                <p class="bs-muted">Maintenance Rooms</p>
+                <h2 id="maintenanceRoomCount">0</h2>
+                <p>Currently unavailable</p>
+            </article>
+
+        </section>
+
+        <section class="bs-section">
+            <div class="bs-section-heading">
+                <div>
+                    <p class="bs-eyebrow">QUICK ACCESS</p>
+                    <h2>Manage Your Workspace</h2>
+                </div>
+            </div>
+
+            <div class="bs-management-grid">
+
+                <a href="daily-schedule.html" class="bs-management-card">
+                    <div class="bs-card-icon">01</div>
+                    <h3>Daily Schedule</h3>
+                    <p class="bs-muted">
+                        View student room bookings and reservation details.
+                    </p>
+                    <span class="bs-text-link">View Schedule →</span>
+                </a>
+
+                <a href="manage-rooms.html" class="bs-management-card">
+                    <div class="bs-card-icon">02</div>
+                    <h3>Manage Rooms</h3>
+                    <p class="bs-muted">
+                        Check room availability and update room status.
+                    </p>
+                    <span class="bs-text-link">Manage Rooms →</span>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="bs-section">
+            <div class="bs-section-heading">
+                <div>
+                    <p class="bs-eyebrow">ROOM OVERVIEW</p>
+                    <h2>Room Utilisation</h2>
+                </div>
+            </div>
+
+            <div class="bs-panel">
+                <div id="roomUtilisationList" class="bs-utilisation-list">
+                    <p class="bs-muted">Room utilisation will appear here.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bs-footer">
+        <p>© 2026 Biblio-Space. A space for every idea.</p>
+    </footer>
+
+    <script src="portal.js"></script>
+</body>
+</html>

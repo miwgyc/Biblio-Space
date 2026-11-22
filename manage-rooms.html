@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Rooms | Biblio-Space</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bs-page" data-page="manage-rooms">
+
+    <header class="bs-header">
+        <a href="librarian-dashboard.html" class="bs-brand">
+            Biblio-Space
+        </a>
+
+        <nav class="bs-nav">
+            <a href="librarian-dashboard.html">Dashboard</a>
+            <a href="daily-schedule.html">Daily Schedule</a>
+            <a href="manage-rooms.html">Manage Rooms</a>
+        </nav>
+
+        <button class="bs-logout" type="button" data-logout>
+            Log Out
+        </button>
+    </header>
+
+    <main class="bs-container">
+
+        <div class="bs-back-link">
+            <a href="librarian-dashboard.html">← Back to Dashboard</a>
+        </div>
+
+        <section class="bs-page-heading">
+            <p class="bs-eyebrow">LIBRARIAN PORTAL</p>
+            <h1>Manage Rooms</h1>
+            <p class="bs-muted">
+                Monitor room availability and update the status of each study space.
+            </p>
+        </section>
+
+        <section class="bs-section">
+
+            <div class="bs-section-heading">
+                <div>
+                    <h2>Room Management</h2>
+                    <p class="bs-muted">
+                        Change a room's status when it is available or under maintenance.
+                    </p>
+                </div>
+            </div>
+
+            <div id="manageRoomList" class="bs-panel">
+
+                <p class="bs-muted">
+                    Room information will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+        <div class="bs-cta">
+            <h2>Keep Every Space Ready</h2>
+            <p>
+                Check the daily reservations to monitor how students use the rooms.
+            </p>
+            <a href="daily-schedule.html" class="bs-button">
+                View Daily Schedule
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="bs-footer">
+        <p>© 2026 Biblio-Space. A space for every idea.</p>
+    </footer>
+
+    <script src="portal.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookings | Biblio-Space</title>
+                <a href="student-dashboard.html" class="bs-back-link">
+            ← Back to Student Dashboard </a>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bs-page" data-page="my-bookings">
+
+    <header class="bs-header">
+        <a href="student-dashboard.html" class="bs-brand">Biblio-Space</a>
+        <nav class="bs-nav">
+
+            <a href="student-dashboard.html">Dashboard</a>
+            <a href="booking.html">Book a Room</a>
+            <a href="my-bookings.html">My Bookings</a>
+            <button class="bs-logout" data-logout>Logout</button>
+        </nav>
+    </header>
+
+    <main class="bs-container">
+        <section class="bs-page-heading">
+            <p class="bs-eyebrow">STUDENT PORTAL</p>
+            <h1>My Bookings</h1>
+            <p>View and manage your room reservations.</p>
+        </section>
+
+        <section class="bs-panel">
+            <div class="bs-section-heading">
+                <h2>Your Reservations</h2>
+                <a href="booking.html" class="bs-button">
+                    + New Booking
+                </a>
+            </div>
+
+            <div id="myBookingsList"></div>
+        </section>
+    </main>
+
+    <footer class="bs-footer">
+        Biblio-Space © 2026
+    </footer>
+
+    <script src="portal.js"></script>
+</body>
+</html>
